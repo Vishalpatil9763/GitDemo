@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [QaToolsSuite]">
+  <test name="QaTest">
+    <classes>
+      <class name="testCasess.HomePageTest"/>
+      <class name="testCasess.LoginPageTest"/>
+      <class name="testCasess.AddUserPageTest"/>
+      <class name="testCasess.Userpagetest"/>
+    </classes>
+  </test> <!-- QaTest -->
+</suite> <!-- Failed suite [QaToolsSuite] -->
