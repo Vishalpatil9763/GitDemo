@@ -27,7 +27,7 @@ public class RegNewMember extends BaseTest {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void validateRegisterNewUser(String ftName, String mb, String em, String pass) {
+	public void validateRegisterNewUser(String ftName, String mb, String em, String pass)  {
 		name.sendKeys(ftName);
 		mobile.sendKeys(mb);
 		email.sendKeys(em);
@@ -35,7 +35,15 @@ public class RegNewMember extends BaseTest {
 		signInBtn.click();
 
 		Alert alert = driver.switchTo().alert();
-		String text = alert.getText();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		/*String text = alert.getText();
 		System.out.println(text);
 		if (text.equals("User registered successfully.")) {
 			System.out.println("correct alert message");
@@ -43,7 +51,7 @@ public class RegNewMember extends BaseTest {
 		}
 		else {
 			System.out.println("incorrect message");
-		}
+		}*/
 
 		alert.accept();
 	}
